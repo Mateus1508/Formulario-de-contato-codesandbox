@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+div {
+  height: 100vh;
+  width: 100vw;
+  background: #777;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #000;
+  letter-spacing: 0.5px;
+}
+fieldset {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 50vw;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+label {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px 10px 5px 10px;
+}
+legend {
+  font-size: 36px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  margin: 0 5px 0 5px;
+}
+textarea {
+  border-radius: 3px;
+}
+input {
+  height: 2rem;
+}
+button {
+  margin: 1rem auto;
+  width: 7rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 7px;
+  box-shadow: 0 0 5px #023047;
+  color: #fff;
+  background: #219ebc;
+  transition: all 0.5s;
+  grid-column: 2;
+}
+button:hover {
+  /*   animation: pulse 1.5s infinite ease-in-out alternate;
+ */
+  box-shadow: 0 0 5px 2px #023047;
+  background: #023047;
+}
+button:active {
+  box-shadow: 0 0 5px 10px #023047;
+  background: #023047;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px 3px #219ebc;
+    background: #219ebc;
+  }
+  45% {
+    box-shadow: 0 0 5px 1px #023047;
+  }
+  100% {
+    box-shadow: 0 0 15px 2px #023047;
+    background: #023047;
+  }
+}
